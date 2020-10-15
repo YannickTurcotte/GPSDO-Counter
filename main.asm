@@ -2,7 +2,7 @@
 .Org $0000
 .include "int_atmega328p.inc"
 
-;définition des régistres.
+;dÃ©finition des rÃ©gistres.
 .def temp =R16	
 .def temp2=r17
 
@@ -55,7 +55,7 @@
 ;********************************* RESET *******************************************
 ;***********************************************************************************
 RESET:	ldi	temp,low(RAMEND)
-		out	SPL,temp			; Initialisation de la pile à   
+		out	SPL,temp			; Initialisation de la pile Ã    
 		ldi	temp,high(RAMEND)	; l'adresse haute de la SRAM
 		out	SPH,temp 
 
@@ -68,7 +68,7 @@ RESET:	ldi	temp,low(RAMEND)
 		ldi temp, 0b00010011
 		out ddrb, temp	;port b en sortie pour pwm et un led pb0. PB4 en sortie avec 0v pour detection avec pb5 en entree(jumper)
 		com temp
-		out portb,temp	;met les pull up sur les entrées et met 0v sur les sorties. Le LED sur pb0 warming est off
+		out portb,temp	;met les pull up sur les entrÃ©es et met 0v sur les sorties. Le LED sur pb0 warming est off
 		ser temp
 		out ddrc, temp	;afficheur portc en sortie
 		ldi temp, 0b11100010
@@ -81,7 +81,7 @@ RESET:	ldi	temp,low(RAMEND)
 		rcall WarmingLedPulse
 ;interrupt *************************************************************************
 		ldi temp, (0<<int0)|(0<<int1)	;active int1 push button seulement pour commencer. 
-		out EIMSK,temp		;active int1 dans External Interrupt Mask Register – EIMSK
+		out EIMSK,temp		;active int1 dans External Interrupt Mask Register â€“ EIMSK
 		ldi temp, (1<<ISC01)|(1<<ISC00)|(1<<ISC11)|(0<<ISC10)	;falling edge les 2
 		sts eicra, temp
 ;initialisation du pointeur de eeprom
@@ -95,8 +95,8 @@ RESET:	ldi	temp,low(RAMEND)
 		rcall reset_afficheur
 		rcall videecran
 		rcall posi1
-		ldi r31,high(data7*2)  		;"counter yt 1.01"    Ici on va chercher l'addresse mémoire ou se retrouve le data à afficher.
-		ldi r30,low(data7*2)		;cette addresse se retrouve dans le registe Z. Qui est constitué en fait
+		ldi r31,high(data7*2)  		;"counter yt 1.01"    Ici on va chercher l'addresse mÃ©moire ou se retrouve le data Ã  afficher.
+		ldi r30,low(data7*2)		;cette addresse se retrouve dans le registe Z. Qui est constituÃ© en fait
 		rcall message
 		rcall nextline
 		rcall tempo5s
@@ -109,7 +109,7 @@ RESET:	ldi	temp,low(RAMEND)
 		sts icr1l, temp
 		ldi temp, (1<<COM1A1)|(1<<WGM11)|(0<<WGM10)	;mode 14 fast pwm top = ICR1
 		sts tccr1a, temp
-		ldi temp, (1<<WGM12)|(1<<WGM13)|(1<<CS10)	;no prescaler   -----> 0<<CS10=off  1<<CS10=on
+		ldi temp, (1<<WGM12)|(1<<WGM13)|(0<<CS10)	;no prescaler   -----> 0<<CS10=off  1<<CS10=on
 		sts tccr1b, temp
 		ldi temp, $84	;ffff = 100 7fff = 50%
 		sts ocr1ah, temp
@@ -121,10 +121,10 @@ RESET:	ldi	temp,low(RAMEND)
 ;Sonde le push button, si pushbutton est enfonce = reset eeprom par valeur default 
 		sbic pind, pd3		;(Skip if Bit in I/O Register is Cleared)
 		rjmp ButtonNotPressed			
-		rcall videecran		;push button est appuyé = reset default
+		rcall videecran		;push button est appuyÃ© = reset default
 		rcall posi1
-		ldi r31,high(data20*2)  	;Set to default                Ici on va chercher l'addresse mémoire ou se retrouve le data à afficher.
-		ldi r30,low(data20*2)		;cette addresse se retrouve dans le registe Z. Qui est constitué en fait du registre R31 et R30. Z est en fait 16 bits de long.								
+		ldi r31,high(data20*2)  	;Set to default                Ici on va chercher l'addresse mÃ©moire ou se retrouve le data Ã  afficher.
+		ldi r30,low(data20*2)		;cette addresse se retrouve dans le registe Z. Qui est constituÃ© en fait du registre R31 et R30. Z est en fait 16 bits de long.								
 		rcall message				;dans message, on affiche ce que pointe Z "ceci est un test"
 		call nextline
 		rcall effaceeeprom
@@ -144,8 +144,8 @@ ytyt:
 		clr temp	
 		out tcnt0, temp		;met le compteur a 0 au cas
 watchdogsetup:	;active int watchdog 1 secondes. Si le gps pulse manque un pulse. Le watchdow timeout et on passe en mode selfrunning
-		wdr		;Au debut je croyais que 1 seconde serait trop court car on a seulement un wdr a chaque seconde. Après test, aucun probleme, J'imagine que le watchdog est un peu plus lent.
-		ldi temp, (1<<WDCE)|(1<<WDE) ;toujours envoyé ces 2 valeurs en premier, ensuite en dedans de 4 clock nous pouvons changer le registre
+		wdr		;Au debut je croyais que 1 seconde serait trop court car on a seulement un wdr a chaque seconde. AprÃ¨s test, aucun probleme, J'imagine que le watchdog est un peu plus lent.
+		ldi temp, (1<<WDCE)|(1<<WDE) ;toujours envoyÃ© ces 2 valeurs en premier, ensuite en dedans de 4 clock nous pouvons changer le registre
 		sts	WDTCSR,temp
 		ldi temp, (0<<WDE)|(1<<WDIE)|(0<<wdp3)|(1<<wdp2)|(1<<wdp1)|(0<<wdp0) ;enable watchdog 1s. interrupt seulement pas de reset
 		sts WDTCSR,temp
@@ -214,14 +214,14 @@ TIM0_OVF:	;viens ici a APRES chaque 256 clock a l'aide le int overflow
 ;Je n'ai aucun moyen de corriger ca. Par chance, Vu que je roule a 10 mhz pile, si le dernier pulse n'arrive pas dedans, il n'arrivera donc jamais dedans.
 ;Et si il arrive toujours dedans, il va etre toujours dedans. Dans ce cas je changerai ou ajouterai une boucle de temps au depart.
 ;Apres test le dernier pulse arrive a 00 en phase 2,4,5,6 et a 80 a 1 et 2.
-;Reponse. Il vient ici avant le dernier latch car le compteur est parti a 7,8 tic en retard, Donc il vient ici 7-8 tic avant la fin. Quand le compteur est arreté dans l'interruption latch. Il est rendu a 0 a ce moment.
-;En aucun cas l'interruption latch peut arriver en même temps que un timer overflow pour cette raison.
+;Reponse. Il vient ici avant le dernier latch car le compteur est parti a 7,8 tic en retard, Donc il vient ici 7-8 tic avant la fin. Quand le compteur est arretÃ© dans l'interruption latch. Il est rendu a 0 a ce moment.
+;En aucun cas l'interruption latch peut arriver en mÃªme temps que un timer overflow pour cette raison.
 		ldi temp, $ff
 		cp xl, temp			;tcnt0 monte a FF et retourne a 0. Un intterruption survien et on arrive ici. 
 		cpc xh, temp		;On incremente x et regarde si le registre x est rendu plein, compare a $FFFF
-		breq incy			;x est incrementé de 1 a chaque 256 clock. quand x = FFFF on monte y de 1 (ca prend un clk et ffff monte a 10000) et on remet x a 0.
+		breq incy			;x est incrementÃ© de 1 a chaque 256 clock. quand x = FFFF on monte y de 1 (ca prend un clk et ffff monte a 10000) et on remet x a 0.
 		adiw xh:xl, $01		;monte de 1 le registre x de 16 bit: X vaut (FFFF+1) x $100 = $10,00,00 1000000 (6 zero)
-;scan gatetime si la gate a changé on restart avec le nouveau gatetime
+;scan gatetime si la gate a changÃ© on restart avec le nouveau gatetime
 		lds temp, gatetime ;1
 		push temp ;1
 		rcall CheckForTimeGate ;0
@@ -232,7 +232,7 @@ TIM0_OVF:	;viens ici a APRES chaque 256 clock a l'aide le int overflow
 		rcall CounterLedOff
 		rcall nextline
 		sbi eifr, 1
-		ldi temp, 0b00000010	;remove int1 flag pour etre encore plus sur. (je l'ai déja vu 2 fois de fille comme l'interrupt se faisait 2 fois.
+		ldi temp, 0b00000010	;remove int1 flag pour etre encore plus sur. (je l'ai dÃ©ja vu 2 fois de fille comme l'interrupt se faisait 2 fois.
 		store eifr, temp
 		ldi temp, (0<<CS00)	;stop counter 8 bit
 		out TCCR0B,temp
@@ -284,15 +284,15 @@ incy:						;y vaux (1,00,00,00)...
 ;*********************************************************   Push button   ***************************************************************
 ;*****************************************************************************************************************************************
 ;*****************************************************************************************************************************************
-pushbutton:		;dans le mode warming up 15 minute. Push button génere aussi un interruption. On regarde ici si elle arrive derant le 15 minutes
+pushbutton:		;dans le mode warming up 15 minute. Push button gÃ©nere aussi un interruption. On regarde ici si elle arrive derant le 15 minutes
 
 		call nextline
-;ici on veut afficher l'heure. On sait que le bouton a été appuyer dans le mode count. On doit donc tout rénitialiser car ici on bypass le reti. C'est pas évident de fonctionner ainsi
+;ici on veut afficher l'heure. On sait que le bouton a Ã©tÃ© appuyer dans le mode count. On doit donc tout rÃ©nitialiser car ici on bypass le reti. C'est pas Ã©vident de fonctionner ainsi
 ;mais j'ai pas le choix.
 		wdr
 		clr temp
 		sts affichesatelliteflag, temp ;empeche le nombre de satellite de s'afficher. deja mis a 0 auparavent mais eu un bug que ca affichait.
-;ferme le led warming car si le push button est appuyé plusieurs fois de suite lors du warming. Le les du pulse reste allumer car le push button genere 2 interruptions et le WAIT na pas le temps de
+;ferme le led warming car si le push button est appuyÃ© plusieurs fois de suite lors du warming. Le les du pulse reste allumer car le push button genere 2 interruptions et le WAIT na pas le temps de
 ;fermer le led
 		cbi ddrb, 0
 		cbi portb, 0
@@ -306,10 +306,10 @@ pushbutton:		;dans le mode warming up 15 minute. Push button génere aussi un int
 		rcall affiche_eeprom ;(se trouve dans eeprom.asm)
 		rcall seconde_tempo
 		wdr	
-;on doit tout rénitialiser car on revient ici par interruption push button quand on etait en train de compter. Donc on remet a 0 et on
-;retourne à la phase ou nous etions
+;on doit tout rÃ©nitialiser car on revient ici par interruption push button quand on etait en train de compter. Donc on remet a 0 et on
+;retourne Ã  la phase ou nous etions
 		sbi eifr, 1
-		ldi temp, 0b00000010	;remove int1 flag pour etre encore plus sur. (je l'ai déja vu 2 fois de fille comme l'interrupt se faisait 2 fois.
+		ldi temp, 0b00000010	;remove int1 flag pour etre encore plus sur. (je l'ai dÃ©ja vu 2 fois de fille comme l'interrupt se faisait 2 fois.
 		store eifr, temp
 		ldi temp, (0<<CS00)	;stop counter 8 bit
 		out TCCR0B,temp
@@ -321,7 +321,7 @@ pushbutton:		;dans le mode warming up 15 minute. Push button génere aussi un int
 		ldi temp,0b00000001
 		store TIFR0, temp		;annule timer l'overflow si il y a eu un
 		sbi eifr, 1
-		ldi temp, 0b00000010	;remove int1 flag pour etre encore plus sur. (je l'ai déja vu 2 fois de fille comme l'interrupt se faisait 2 fois.
+		ldi temp, 0b00000010	;remove int1 flag pour etre encore plus sur. (je l'ai dÃ©ja vu 2 fois de fille comme l'interrupt se faisait 2 fois.
 		store eifr, temp
 		ldi temp, (0<<CS00)	;stop counter 8 bit
 		out TCCR0B,temp
@@ -335,18 +335,18 @@ pushbutton:		;dans le mode warming up 15 minute. Push button génere aussi un int
 ;*****************************************************************************************************************************************
 ;*****************************************************************************************************************************************
 Latch:
-; Un pulse arrive chaque seconde. On calcul le nombre de hertz a l'aide du compteur 8bit en incrémentant le registre x et y.
+; Un pulse arrive chaque seconde. On calcul le nombre de hertz a l'aide du compteur 8bit en incrÃ©mentant le registre x et y.
 ; meme nombre de clock (operations) pour partir ou arreter le compteur pour que ca balance.
 ; un probleme peut survenir. Le compteur tcnt0 compte sans arret.
-; si l'interruption arrive quand tcnt0 est a 254... il se créé un overflow pendant l'interruption. Par contre le flag reste en suspand et n'est pas pris en compte
+; si l'interruption arrive quand tcnt0 est a 254... il se crÃ©Ã© un overflow pendant l'interruption. Par contre le flag reste en suspand et n'est pas pris en compte
 ; tout de suite car les int sont disable durant le traitement de celle ci.
-; le comprteur est donc faussé car tcnt0 est additionné au total mais maintenant il vaut seulement 0 ou 1 car il a recommencé.
-; par contre l'interruption en mémoire est executé aussitot sorti de cette interruption et les 256 clock de perdu sont additionné au prochain.
+; le comprteur est donc faussÃ© car tcnt0 est additionnÃ© au total mais maintenant il vaut seulement 0 ou 1 car il a recommencÃ©.
+; par contre l'interruption en mÃ©moire est executÃ© aussitot sorti de cette interruption et les 256 clock de perdu sont additionnÃ© au prochain.
 ;***IMPORTANT** finalement l'overflow se gere comme un neuvieme bit qui vaut (256) $100. Simplement ajouter le tcnt0 + $100 quand le tov0 est a 1
 ; jai donc inclus du code pour gerer le bit overflow quand cela se produit
-;*** important: J'ai lu apres dans le datasheet: tov0 peut etre considéré comme un 9iem bit!!! Plus facile de penser comme cela. il passe a 1 en meme temps qu'il passe tcnt0 a 0.
+;*** important: J'ai lu apres dans le datasheet: tov0 peut etre considÃ©rÃ© comme un 9iem bit!!! Plus facile de penser comme cela. il passe a 1 en meme temps qu'il passe tcnt0 a 0.
 
-		lds r16, compteh ;compte est incrementé a chaque seconde
+		lds r16, compteh ;compte est incrementÃ© a chaque seconde
 		lds r17, comptel
 		lds r18, echantillon_timeh	;on echantillone combien de temps ???? C'est ici
 		lds r19, echantillon_timel
@@ -358,7 +358,7 @@ Latch:
 		out TCCR0B,temp
 
 	;peux ajouter du code ici sans changer le resultat du count mais ne doit pas depasser 256 clock
-	;pourquoi... parce que ici les interruption sont deactivé. Si ca prend plus que 256 clock le compteur tcnt0 va faire un ou plusieur overflow mais ne sera
+	;pourquoi... parce que ici les interruption sont deactivÃ©. Si ca prend plus que 256 clock le compteur tcnt0 va faire un ou plusieur overflow mais ne sera
 	;pas pris en compte car il y a un buffer de seulement 1 interruption.
 
 		lds zh, compteh
@@ -380,8 +380,8 @@ off:
 		cbr temp, 0b01000000
 		out portd, temp
 
-;ici on doit gerer la valeur de x et y qui s'est accumulé dans l'echantionnage
-;(xh:xl x $100) + (yh:yl x $1000000) + le reste du compteur tcnt0 + overflow (256) si actif = nombre de clock écoulé total.
+;ici on doit gerer la valeur de x et y qui s'est accumulÃ© dans l'echantionnage
+;(xh:xl x $100) + (yh:yl x $1000000) + le reste du compteur tcnt0 + overflow (256) si actif = nombre de clock Ã©coulÃ© total.
 
 ;r21:r20 x r23:r22 = r5:r4:r3:r2
 		mov r21, xh	;x x 256
@@ -431,7 +431,7 @@ off:
 ;test overflow bit
 		sbis TIFR0, tov0	;skip if bit is set (bit overflow)  Si il y a eu overflow entre l'interrup et l'arret on ajoute 256
 		rjmp fiou
-		ldi temp, (1<<TOV0)	;annule l'overflow pending et la future interruption par le fait meme. Faire a la main car reti est bypassé.
+		ldi temp, (1<<TOV0)	;annule l'overflow pending et la future interruption par le fait meme. Faire a la main car reti est bypassÃ©.
 		out tifr0, temp
 		clr r16
 		ldi r17,$01		;additionne 256
@@ -460,7 +460,7 @@ fiou:
 		lds r18, frequence_3
 		lds r17, frequence_2
 		lds r16, frequence_1
-		rcall hex2bcdyt		;conversion bcd	;fonctionne bien pas de bug testé avec afficheur ca concorde.
+		rcall hex2bcdyt		;conversion bcd	;fonctionne bien pas de bug testÃ© avec afficheur ca concorde.
 		sts frebcd1, r21
 		sts frebcd2, r22
 		sts frebcd3, r23
@@ -549,7 +549,7 @@ onnettoie2:
 		sts comptel, temp
 		sts compteh, temp
 		ldi	temp,low(RAMEND)
-		out	SPL,temp			; Initialisation de la pile à   
+		out	SPL,temp			; Initialisation de la pile Ã    
 		ldi	temp,high(RAMEND)	; l'adresse haute de la SRAM
 		out	SPH,temp
 		rjmp runmodeprep
@@ -579,7 +579,7 @@ watchdog_overflow:
 		call nextline
 jsjs:
 		rcall tempo5s
-		ldi temp, (1<<TOV0)	;annule l'overflow pending et la future interruption par le fait meme. Faire a la main car reti est bypassé.
+		ldi temp, (1<<TOV0)	;annule l'overflow pending et la future interruption par le fait meme. Faire a la main car reti est bypassÃ©.
 		out tifr0, temp
 		ldi temp, (0<<CS00)	;stop counter 8 bit
 		out TCCR0B,temp
@@ -588,10 +588,10 @@ jsjs:
 		out tcnt0, temp		;met le compteur a 0 au cas
 		sts comptel, temp	;initialise le flag compte. Il repart a 0
 		sts compteh, temp
-;ici on dois attendre la detection d'un gps pulse. donc on loop ici et quand un pulse est detecté, on affiche la bonne phase et on repart la calibration
+;ici on dois attendre la detection d'un gps pulse. donc on loop ici et quand un pulse est detectÃ©, on affiche la bonne phase et on repart la calibration
 
 toujoursrien:
-		wdr				;empeche un autre interrupt watchdog de survenir. Sinon le flag interrupt watchdog se met a 1 et un autre interrupt watchdog est excuté aussitot sei embarqué
+		wdr				;empeche un autre interrupt watchdog de survenir. Sinon le flag interrupt watchdog se met a 1 et un autre interrupt watchdog est excutÃ© aussitot sei embarquÃ©
 		sbic pind, pd2
 		rjmp toujoursrien
 		rjmp runmodeprep1
@@ -616,13 +616,13 @@ WDT_off:
 ;****************************************************************** retour en mode interrupt ************************************************************
 Retour_en_mode_interrupt:
 		ldi temp, (1<<int1)|(0<<int0)	;deactive int0 interrup gps pulse
-		out EIMSK,temp					;deactive int0 dans External Interrupt Mask Register – EIMSK
+		out EIMSK,temp					;deactive int0 dans External Interrupt Mask Register â€“ EIMSK
 		wdr
 		in temp, MCUSR			;enleve le watchdog interrupt pending avant le sei.
 		andi temp, ~(1<<WDRF)
 		out MCUSR, r16	
 		sei ;active les interrupt (watchdog seument pour senser le pulse)
-		;boucle de temps pour laisser le voltage du pwm se stabilisé (condensabeur chargé) peut etre pas nécessaire mais pour 2 secondes rien ne presse
+		;boucle de temps pour laisser le voltage du pwm se stabilisÃ© (condensabeur chargÃ©) peut etre pas nÃ©cessaire mais pour 2 secondes rien ne presse
 		rcall seconde_tempo
 		wdr
 		rcall seconde_tempo
@@ -640,7 +640,7 @@ pasencorepret2:
 		ldi temp, 0b00000011	;enleve les interrupt pending avant l'activation des interrupt
 		store eifr,temp
 		ldi temp, (1<<int1)|(1<<int0)	;active int0 interrup gps pulse   ---->1<<int1 = push button active
-		out EIMSK,temp					;active int0 dans External Interrupt Mask Register – EIMSK
+		out EIMSK,temp					;active int0 dans External Interrupt Mask Register â€“ EIMSK
 		wdr	
 .include "NopLoop.asm"
 ;
