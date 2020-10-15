@@ -1,0 +1,222 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\int_atmega328p.inc</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\macros.inc</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\NopLoop.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\Debug\Gpsdo Yannick.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Gpsdo Yannick.hex</FILE>
+  <FILE>Gpsdo Yannick.eep</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Gpsdo Yannick.map</FILE>
+  <FILE>Gpsdo Yannick.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>57</LINE></reset>
+  <Latch><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>337</LINE></Latch>
+  <pushbutton><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>287</LINE></pushbutton>
+  <watchdog_overflow><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>560</LINE></watchdog_overflow>
+  <TIM0_OVF><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>211</LINE></TIM0_OVF>
+  <data7><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>2</LINE></data7>
+  <data19><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>5</LINE></data19>
+  <data20><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>8</LINE></data20>
+  <data32><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>11</LINE></data32>
+  <data34><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>14</LINE></data34>
+  <data37><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>17</LINE></data37>
+  <data40><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>20</LINE></data40>
+  <hexa><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>23</LINE></hexa>
+  <reset_afficheur><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>29</LINE></reset_afficheur>
+  <enable><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>71</LINE></enable>
+  <tempo2ms><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>246</LINE></tempo2ms>
+  <videecran><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>85</LINE></videecran>
+  <ecris><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>78</LINE></ecris>
+  <t50us><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>238</LINE></t50us>
+  <posi1><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>95</LINE></posi1>
+  <posi2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>104</LINE></posi2>
+  <posisat><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>113</LINE></posisat>
+  <espace><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>123</LINE></espace>
+  <afficheascii><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>143</LINE></afficheascii>
+  <effaceligne><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>129</LINE></effaceligne>
+  <effaceligne2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>132</LINE></effaceligne2>
+  <affichenombre><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>157</LINE></affichenombre>
+  <plushaut><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>162</LINE></plushaut>
+  <affichenombre2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>172</LINE></affichenombre2>
+  <affichemsb><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>185</LINE></affichemsb>
+  <affichelsb><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>201</LINE></affichelsb>
+  <message><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>216</LINE></message>
+  <finmessage><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>233</LINE></finmessage>
+  <tx><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>40</LINE></tx>
+  <LOOP0><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>240</LINE></LOOP0>
+  <LOOP0e><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>248</LINE></LOOP0e>
+  <LOOP1e><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>249</LINE></LOOP1e>
+  <tempo10ms><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>255</LINE></tempo10ms>
+  <LOOP0m><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>257</LINE></LOOP0m>
+  <LOOP1m><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>258</LINE></LOOP1m>
+  <LOOP2m><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>259</LINE></LOOP2m>
+  <tempo300ms><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>267</LINE></tempo300ms>
+  <LOOP0f><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>269</LINE></LOOP0f>
+  <LOOP1f><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>270</LINE></LOOP1f>
+  <LOOP2f><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>271</LINE></LOOP2f>
+  <tempo5s><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>279</LINE></tempo5s>
+  <encoreplus><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>281</LINE></encoreplus>
+  <afficheGate10000s><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>290</LINE></afficheGate10000s>
+  <afficheGate1000s><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>296</LINE></afficheGate1000s>
+  <affichememoire><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>306</LINE></affichememoire>
+  <okpasdedepassementq><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>316</LINE></okpasdedepassementq>
+  <okpasdedepassement7q><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>327</LINE></okpasdedepassement7q>
+  <WarmingLedPulse><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>336</LINE></WarmingLedPulse>
+  <SatLedOn><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>340</LINE></SatLedOn>
+  <SatLedOff><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>343</LINE></SatLedOff>
+  <CounterLedOn><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>346</LINE></CounterLedOn>
+  <CounterLedOff><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\afficheur.asm</FILE><LINE>349</LINE></CounterLedOff>
+  <mul16><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>12</LINE></mul16>
+  <Add32><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>35</LINE></Add32>
+  <Mul32b><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>54</LINE></Mul32b>
+  <Mul32w><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>55</LINE></Mul32w>
+  <Mul32t><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>56</LINE></Mul32t>
+  <Mul32><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>57</LINE></Mul32>
+  <m32u_loop><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>62</LINE></m32u_loop>
+  <Return32u><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>78</LINE></Return32u>
+  <m32u_skip><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>73</LINE></m32u_skip>
+  <ClrAllRegister><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>81</LINE></ClrAllRegister>
+  <seconde_tempo><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>102</LINE></seconde_tempo>
+  <LOOP0y><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>105</LINE></LOOP0y>
+  <LOOP1y><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>106</LINE></LOOP1y>
+  <LOOP2y><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>107</LINE></LOOP2y>
+  <LOOP3y><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>114</LINE></LOOP3y>
+  <ClearAllMemory><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>120</LINE></ClearAllMemory>
+  <MemoryClearNext><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>123</LINE></MemoryClearNext>
+  <hex2bcdyt><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>133</LINE></hex2bcdyt>
+  <again><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>144</LINE></again>
+  <checkif><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>161</LINE></checkif>
+  <rienafaire><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>168</LINE></rienafaire>
+  <rienafaire2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>175</LINE></rienafaire2>
+  <rienafaire3><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>184</LINE></rienafaire3>
+  <rienafaire4><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>191</LINE></rienafaire4>
+  <rienafaire5><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>200</LINE></rienafaire5>
+  <rienafaire6><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>207</LINE></rienafaire6>
+  <rienafaire7><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>216</LINE></rienafaire7>
+  <rienafaire8><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>223</LINE></rienafaire8>
+  <rienafaire9><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>232</LINE></rienafaire9>
+  <rienafaire10><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>239</LINE></rienafaire10>
+  <rienafaire11><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>248</LINE></rienafaire11>
+  <rienafaire12><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>255</LINE></rienafaire12>
+  <Div32b><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>275</LINE></Div32b>
+  <Div32w><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>276</LINE></Div32w>
+  <Div32t><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>277</LINE></Div32t>
+  <Div32><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>278</LINE></Div32>
+  <d32u_loop><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>283</LINE></d32u_loop>
+  <Com32><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\math.inc</FILE><LINE>303</LINE></Com32>
+  <eepromw><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>5</LINE></eepromw>
+  <ecr01><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>6</LINE></ecr01>
+  <ram2eeprom><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>14</LINE></ram2eeprom>
+  <ecr02><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>21</LINE></ecr02>
+  <eepromwritebytes><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>32</LINE></eepromwritebytes>
+  <ecr01q><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>33</LINE></ecr01q>
+  <onyva><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>42</LINE></onyva>
+  <ram2eepromq><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>48</LINE></ram2eepromq>
+  <ecr02q><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>55</LINE></ecr02q>
+  <eepromr><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>69</LINE></eepromr>
+  <lir01><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>78</LINE></lir01>
+  <lir02><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>80</LINE></lir02>
+  <effaceeeprom><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>93</LINE></effaceeeprom>
+  <effaceencore><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>97</LINE></effaceencore>
+  <affiche_eeprom><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>114</LINE></affiche_eeprom>
+  <nextline><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>457</LINE></nextline>
+  <eepromr3><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>126</LINE></eepromr3>
+  <Debut_du_eeprom_atteint><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>174</LINE></Debut_du_eeprom_atteint>
+  <lir01a><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>137</LINE></lir01a>
+  <lir02a><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>139</LINE></lir02a>
+  <affichememoireserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>473</LINE></affichememoireserial>
+  <eepromr4><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>155</LINE></eepromr4>
+  <lir01b><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>159</LINE></lir01b>
+  <lir02b><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\eeprom.asm</FILE><LINE>161</LINE></lir02b>
+  <USART_Init><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>8</LINE></USART_Init>
+  <onesta4800><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>16</LINE></onesta4800>
+  <setbaudrate><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>19</LINE></setbaudrate>
+  <RX><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>33</LINE></RX>
+  <checkgpgga><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>47</LINE></checkgpgga>
+  <kjkj><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>60</LINE></kjkj>
+  <onallumeleled2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>91</LINE></onallumeleled2>
+  <affichesatellite2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>98</LINE></affichesatellite2>
+  <onallumeleled22><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>132</LINE></onallumeleled22>
+  <afficheheureposition><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>141</LINE></afficheheureposition>
+  <afseconde><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>148</LINE></afseconde>
+  <checkgpggahp><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>283</LINE></checkgpggahp>
+  <espaceserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>464</LINE></espaceserial>
+  <attendprochaineseconde><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>187</LINE></attendprochaineseconde>
+  <debutdeaffichagelatitudelongitude><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>197</LINE></debutdeaffichagelatitudelongitude>
+  <ramassegga><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>324</LINE></ramassegga>
+  <aflatitude><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>205</LINE></aflatitude>
+  <suitelatitude><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>224</LINE></suitelatitude>
+  <emisphere><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>232</LINE></emisphere>
+  <nextline2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>257</LINE></nextline2>
+  <nextlinefini><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>265</LINE></nextlinefini>
+  <debutdeaffichagelatitudelongitude2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>277</LINE></debutdeaffichagelatitudelongitude2>
+  <kjkj1><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>298</LINE></kjkj1>
+  <prochainbytes><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>339</LINE></prochainbytes>
+  <donegga><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>346</LINE></donegga>
+  <SendSpeed1000serial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>351</LINE></SendSpeed1000serial>
+  <aldo1000serial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>357</LINE></aldo1000serial>
+  <yahoo1000serial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>360</LINE></yahoo1000serial>
+  <affichenombreSeriallow><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>434</LINE></affichenombreSeriallow>
+  <affichenombreSerial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>416</LINE></affichenombreSerial>
+  <affichenombreSerialhigh><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>428</LINE></affichenombreSerialhigh>
+  <SendSpeed10000serial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>383</LINE></SendSpeed10000serial>
+  <aldoserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>390</LINE></aldoserial>
+  <yahooserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>393</LINE></yahooserial>
+  <messageserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>440</LINE></messageserial>
+  <finmessageserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>449</LINE></finmessageserial>
+  <virguleserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>452</LINE></virguleserial>
+  <okpasdedepassementqserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>483</LINE></okpasdedepassementqserial>
+  <okpasdedepassement7qserial><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\serial.asm</FILE><LINE>494</LINE></okpasdedepassement7qserial>
+  <WDT_off><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>602</LINE></WDT_off>
+  <ButtonNotPressed><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>132</LINE></ButtonNotPressed>
+  <ytyt><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>138</LINE></ytyt>
+  <watchdogsetup><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>146</LINE></watchdogsetup>
+  <runmodeprep1><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>158</LINE></runmodeprep1>
+  <runmodeprep><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>160</LINE></runmodeprep>
+  <CheckForTimeGate><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>194</LINE></CheckForTimeGate>
+  <Gate10ks><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>166</LINE></Gate10ks>
+  <Gate1ks><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>178</LINE></Gate1ks>
+  <Retour_en_mode_interrupt><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>617</LINE></Retour_en_mode_interrupt>
+  <willbe10000><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>200</LINE></willbe10000>
+  <incy><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>277</LINE></incy>
+  <canapaschange><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>242</LINE></canapaschange>
+  <onnettoie2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>546</LINE></onnettoie2>
+  <onsenpasse><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>274</LINE></onsenpasse>
+  <onturnon><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>267</LINE></onturnon>
+  <off><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>370</LINE></off>
+  <fiou><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>447</LINE></fiou>
+  <displaymhz10000><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>512</LINE></displaymhz10000>
+  <displaymhz1000><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>478</LINE></displaymhz1000>
+  <aldo1000><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>485</LINE></aldo1000>
+  <yahoo1000><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>488</LINE></yahoo1000>
+  <onnettoie><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>544</LINE></onnettoie>
+  <aldo><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>520</LINE></aldo>
+  <yahoo><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>523</LINE></yahoo>
+  <jsjs><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>580</LINE></jsjs>
+  <toujoursrien><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>593</LINE></toujoursrien>
+  <pasencorepret><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>631</LINE></pasencorepret>
+  <pasencorepret2><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\main.asm</FILE><LINE>635</LINE></pasencorepret2>
+  <loop><FILE>C:\Users\agagu\Documents\Atmel Studio\7.0\GPSDO\Gpsdo YT Counter\NopLoop.asm</FILE><LINE>1</LINE></loop>
+ </LABELS>
+</ASSEMBLER_INFO>
