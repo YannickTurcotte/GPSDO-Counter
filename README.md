@@ -1,5 +1,6 @@
 # GPSDO-Counter
-Frequency counter. Need 1 pps pulse. Gate is 1000 seconds or 10000 seconds
+Frequency counter. Need 1 pulse per second. Gate is 1000 seconds or 10000 seconds.
+
 
 My gpsdo is also a frequency counter. If you already have a gpsdo and need a counter, this is for you.
 I did this modification for Paul. He was looking for a counter to his gpsdo (Lars version)
