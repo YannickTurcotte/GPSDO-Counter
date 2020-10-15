@@ -23,5 +23,7 @@ If you change toggle pd4 while counting. The count is stopped et restart with th
 When pd3 (pin 5) is low, counting is stopped. UTC time wil be displayed following by the gps location for 10 seconds.
 This feature isn't very important for the counter. But it was already coded in my gpsdo and i keep.
 
+The nop loop is very important. It assure to take only one cycle to enter in an interrupt.
+If you bypass the loop it will works. But the count will be +- .002 instead .001
 
 Enjoy
