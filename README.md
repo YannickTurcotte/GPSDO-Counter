@@ -26,4 +26,6 @@ This feature isn't very important for the counter. But it was already coded in m
 The nop loop is very important. It assure to take only one cycle to enter in an interrupt.
 If you bypass the loop it will works. But the count will be +- .002 instead .001
 
+If no pulse is detected. Counting stop and a message will be displayed.
+
 Enjoy
