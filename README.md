@@ -9,14 +9,19 @@ If you want more information, this is his blog: http://www.paulvdiyblogs.net/202
 Now our counter. We need my gpsdo schematic here:
 https://www.instructables.com/GPSDO-YT-10-Mhz-Lcd-2x16-With-LED/
 
+Programming need to have the same fusebit. But i suggest to enable the brown-out detector so fd instead ff--->FD, D9, E0
 
-You can send the pin 3 to a rx uart 9600 8 1 for monitoring.
+
+You can send the TX pin 3 to a rx uart 9600 8 1 for monitoring.
 You can install the display if you need to.
-Led are supported execpt RUN led. this one stay off.
+Led are enabled except RUN led. this one stay off.
 
 When pd4 (pin 6) is high = 1000s gate  (By default, internal pull up is enabled)
-When pd4 (pin6) is low = 10000s gate
-
+When pd4 (pin 6) is low = 10000s gate
 If you change toggle pd4 while counting. The count is stopped et restart with the choosen gate time.
+
+When pd3 (pin 5) is low, counting is stopped. UTC time wil be displayed following by the gps location for 10 seconds.
+This feature isn't very important for the counter. But it was already coded in my gpsdo and i keep.
+
 
 Enjoy
