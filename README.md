@@ -11,10 +11,10 @@ Now our counter. We need my gpsdo schematic here:
 https://www.instructables.com/GPSDO-YT-10-Mhz-Lcd-2x16-With-LED/
 
 You do not need to have all the parts. Important are:
-10mhz clock in
-Capacitor on reset and button pd3 if used
-Capacitor between 0-5v
-Ans an output to see the result---> Lcd, com port or both 
+-10mhz clock in
+-Capacitor on reset and button pd3 if used
+-Capacitor between 0-5v
+-An output to see the result---> Lcd, com port or both 
 
 Programming need to have the same fusebit. But i suggest to enable the brown-out detector so fd instead ff--->FD, D9, E0
 
