@@ -7,6 +7,7 @@ I did this modification for Paul. He was looking for a counter to his gpsdo (Lar
 If you want more information, this is his blog: 
 
 http://www.paulvdiyblogs.net/2020/10/monitoring-measuring-logging-gpsdo.html
+
 http://www.paulvdiyblogs.net/2020/07/a-high-precision-10mhz-gps-disciplined.html
 
 # Lest's start
